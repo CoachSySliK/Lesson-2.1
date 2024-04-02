@@ -14,7 +14,7 @@ int main()
     cout << "Delivery: " << delivery << "\n";
     cout << "Sale: " << sale << "\n";
     cout << "Total prise: " << priseTotal << "\n";
-
+    //на английском, потому что у меня шрифты в консоли не хотели работать. сейчас вроде починил, последние работы на русском.
     return 0;
 }
 
