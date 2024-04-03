@@ -4,16 +4,26 @@ using namespace std;
 
 int main()
 {
-    int priseProduct = 2048;
-    int delivery = 512;
-    int sale = 1024;
-    int priseTotal = priseProduct + delivery - sale;
+    int priseProduct;
+    int delivery;
+    float sale;
+    float priseTotal;
 
+    cout << "Введите стоимость товара: ";
+    cin >> priseProduct;
+    cout << "Введите стоимость доставки: ";
+    cin >> delivery;
+    cout << "Введите размер скидки в процентах: ";
+    cin >> sale;
 
-    cout << "Prise: " << priseProduct << "\n";
-    cout << "Delivery: " << delivery << "\n";
-    cout << "Sale: " << sale << "\n";
-    cout << "Total prise: " << priseTotal << "\n";
+    sale = (priseProduct + delivery) * sale / 100;
+    priseTotal = priseProduct + delivery - sale;
+
+    cout << "\nСтоимость товара" << priseProduct << "\n";
+    cout << "Доставка: " << delivery << "\n";
+    cout << "Скидка: " << sale << "\n";
+    cout << "----------\n";
+    cout << "Итого: " << priseTotal << "\n";
 
     return 0;
 }
